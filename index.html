@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      background-color: hsl(217, 54%, 11%);
+      color: white;
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+    }
+
+    .card {
+      margin: auto;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 15px;
+      width: 25%;
+      min-width: 375px;
+    }
+
+    .card .nft-card {
+      margin: 25px;
+    }
+
+    .card .nft-card img {
+      width: 100%;
+      margin: auto;
+      border-radius: 15px;
+    }
+
+    .card .nft-card h3 {
+      margin: 15px 0;
+    }
+
+    .card .nft-card p {
+      font-size: 18px;
+      margin: 15px 0;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .ethereum-clock {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .ethereum-clock .ethereum,
+    .ethereum-clock .clock {
+      display: flex;
+      gap: 5px;
+    }
+
+    .ethereum-clock .ethereum svg,
+    .ethereum-clock .clock svg {
+      margin: auto;
+    }
+
+    .ethereum-clock .ethereum p {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .nft-card hr {
+      height: 1px;
+      border-width: 0;
+      background-color: hsl(215, 32%, 27%);
+    }
+
+    .profile {
+      margin: 15px 0;
+      display: flex;
+      text-align: start;
+    }
+
+    .profile p {
+      padding: 10px;
+    }
+    .profile p span {
+      color: white;
+    }
+
+    .card .nft-card .profile img {
+      width: 13%;
+      margin: auto 0;
+      border: 1px solid white;
+      border-radius: 100px;
+      padding: 0;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="nft-card">
+      <img src="images/image-equilibrium.jpg" alt="images equilibrium">
+
+      <h3>Equilibrium #3429</h3>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="ethereum-clock">
+        <div class="ethereum">
+          <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+          <p>0.041 ETH</p>
+        </div>
+
+        <div class="clock">
+          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+          <p>3 days left</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="profile">
+        <img src="images/image-avatar.png" alt="images avatar">
+        <p>Creation of <span>Jules Wyvern</span></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
